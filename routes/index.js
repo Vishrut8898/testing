@@ -8,7 +8,7 @@ const nodemailer = require('nodemailer');
 // All Authors Route
 router.get('/', async (req, res) => {
     const services = await Service.find();
-    res.render('index', {services: services, show: false,});
+    res.render('index');
 })
 
 module.exports = router;
