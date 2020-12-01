@@ -11,8 +11,4 @@ router.get('/', async (req, res) => {
     res.render('index', {services: services, show: false,});
 })
 
-router.get('/appointment', async (req, res) => {
-  res.render('appointment', {show: false})
-})
-
 module.exports = router;
